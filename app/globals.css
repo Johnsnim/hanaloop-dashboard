@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --bg: 221 230 237;
+  --fg: 39 55 77;
+  --muted: 82 109 130;
+  --card: 255 255 255;
+  --grid: 157 178 191;
+  --accent: 82 109 130;
+}
+.dark {
+  --bg: 39 55 77;
+  --fg: 221 230 237;
+  --muted: 157 178 191;
+  --card: 82 109 130;
+  --grid: 157 178 191;
+  --accent: 157 178 191;
+}
+html,
+body,
+#__next {
+  height: 100%;
+}
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+.container-gutter {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+.skeleton {
+  @apply animate-pulse rounded-md;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.dark .skeleton {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.bar {
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+@keyframes pulseBar {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+.bar-pulse {
+  animation: pulseBar 2.2s ease-in-out infinite;
+}
