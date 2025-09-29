@@ -1,8 +1,7 @@
 import { Company, Post, Country } from "./types";
 export const countries: Country[] = [
-  { code: "US", name: "United States", carbonTaxPerTon: 20 },
-  { code: "DE", name: "Germany", carbonTaxPerTon: 25 },
-  { code: "KR", name: "Korea", carbonTaxPerTon: 18 },
+  { code: "US", name: "United States" },
+  { code: "DE", name: "Germany" },
 ];
 export const companiesSeed: Company[] = [
   {
@@ -27,18 +26,6 @@ export const companiesSeed: Company[] = [
       { yearMonth: "2024-03", emissions: 120 },
       { yearMonth: "2024-04", emissions: 115 },
       { yearMonth: "2024-05", emissions: 100 },
-    ],
-  },
-  {
-    id: "c3",
-    name: "Dallaem Industries",
-    country: "KR",
-    emissions: [
-      { yearMonth: "2024-01", emissions: 140 },
-      { yearMonth: "2024-02", emissions: 135 },
-      { yearMonth: "2024-03", emissions: 150 },
-      { yearMonth: "2024-04", emissions: 145 },
-      { yearMonth: "2024-05", emissions: 155 },
     ],
   },
 ];
