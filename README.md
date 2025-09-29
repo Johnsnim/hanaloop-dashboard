@@ -1,5 +1,5 @@
 
-## 경영진 / 매니저가 월별 배출량을 한눈에 보고, 기업별로 비교할 수 있는 웹기반 대시보드입니다.
+## 경영진 / 매니저를 위한 웹기반 탄소 배출량 대시보드
 **Next.js 14(App Router) + React 18 + TypeScript + Tailwind + shadcn + Zustand** 
 
 ## 실행방법 
